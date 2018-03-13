@@ -45,12 +45,6 @@
     </table>
   </form>
 
-  <div class = "TopPage">
-  <br>
-    <a href="HomeUser.php"><button type="button" class="btn btn-warning">User Page</button></a>
-    <a href="HomeDriver.php"><button type="button" class="btn btn-danger">Driver Page</button></a>
-  </div>
-
   <div class = "header">
     <img src="carsharing.jpg">
   </div>
