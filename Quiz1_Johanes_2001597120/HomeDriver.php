@@ -14,7 +14,7 @@
         <a class="navbar-brand" href="HomeDriver.php">My Website</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Login.php">Log Out</a></li>
+        <li class="active"><a href="Index.php">Log Out</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Action

@@ -11,10 +11,10 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="home.php">My Website</a>
+        <a class="navbar-brand" href="Index.php">My Website</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Login.php">Home</a></li>
+        <li class="active"><a href="Index.php">Home</a></li>
       </ul>
     </div>
   </nav>

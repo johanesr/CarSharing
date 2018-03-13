@@ -11,14 +11,26 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="Login.php">My Website</a>
+        <a class="navbar-brand" href="HomeUser.php">My Website</a>
       </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Index.php">Log Out</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Action
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="AvailableOfferUser.php">Available Offers</a></li>
+            <li><a href="NoPage.php">My Routes Booked</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </nav>
 
   <div class="container">
   <div class="jumbotron">
-    <h1>Not yet Exist</h1>
+    <h1>Car Sharing (USER)</h1>
   </div>
   </div>
 
@@ -28,7 +40,8 @@
 
 
   <div class="TopPage">
-    The Page has not yet existed
+    <a href="AvailableOfferUser.php">Available Offers</a>
+    <a href="NoPage.php">My Routes Booked</a>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
