@@ -53,22 +53,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-<script>
-function validateID()
-{
-  var ID = document.forms["Login"]["UserID"].value;
-  var Pass = document.forms["Login"]["Password"].value;
-  if (ID == "user1" && Pass == "pass1")
-  {
-    alert(ID);
-    window.location.assign("HomeUser.php");
-  }
-  else if (ID == "user2" && Pass == "pass2")
-  {
-    alert(ID);
-    window.location.assign("HomeDriver.php");
-  }
-}
-</script>

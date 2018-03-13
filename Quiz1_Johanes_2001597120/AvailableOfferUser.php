@@ -33,48 +33,36 @@
   </div>
   </div>
 
-    <table>
-       <tr>
-         <th>Route Number</th>
-         <th>Date/Time</th>
-         <th>Source Location</th>
-         <th>Target Location</th>
-         <th>Driver Name</th>
-         <th>Average Rating</th>
-         <th>Total Ratings</th>
-         <th></th>
-       </tr>
-       <tr>
-         <th>1</th>
-         <td>03/20/2018 20:00</td>
-         <td>Pantai Mutiara</td>
-         <td>Emporium Mall</td>
-         <td>Jacob</td>
-         <td>4</td>
-         <td>5</td>
-         <td><button type="button" class="btn btn-success">Book</button></td>
-       </tr>
-       <tr>
-         <th>2</th>
-         <td>04/10/2018 16:00</td>
-         <td>Pantai Indah Kapuk</td>
-         <td>Rumah Sakit PIK</td>
-         <td>Yosua</td>
-         <td>1</td>
-         <td>2</td>
-         <td><button type="button" class="btn btn-success">Book</button></td>
-       </tr>
-       <tr>
-         <th>3</th>
-         <td>04/10/2019 13:00</td>
-         <td>BINUS University</td>
-         <td>Rumah Sakit PIK</td>
-         <td>Pores</td>
-         <td>3</td>
-         <td>5</td>
-         <td><button type="button" class="btn btn-success">Book</button></td>
-       </tr>
-     </table>
+  <table>
+    <tr>
+      <th>Route Number</th>
+      <th>Date/Time</th>
+      <th>Source Location</th>
+      <th>Target Location</th>
+      <th>Driver Name</th>
+      <th>Average Rating</th>
+      <th>Total Ratings</th>
+      <th></th>
+    </tr>
+    <?php
+      include('connection.php');
+      $query = mysqli_query($connector,"SELECT * FROM Data");
+      while($row = mysqli_fetch_assoc($query))
+      {
+        $cid = $row["RouteNum"];
+        echo "<tr>
+        <td>".$row["RouteNum"]."</td>
+        <td>".$row["Date"]."</td>
+        <td>".$row["Source"]."</td>
+        <td>".$row["Destination"]."</td>
+        <td>".$row["Driver"]."</td>
+        <td>".$row["AvgRate"]."</td>
+        <td>".$row["TotalRate"]."</td>
+        <td><button type=\"button\" class=\"btn btn-success\" onclick=\"window.location.href='DeleteUser.php?id=$cid'\">Book</button></td>
+        </tr>";
+      }
+    ?>
+  </table>
 
   <div class = "header">
     <img src="carsharing.jpg">
