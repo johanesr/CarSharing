@@ -1,2 +1,0 @@
-# CarSharing
-Quiz Web Application
